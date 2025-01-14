@@ -8,6 +8,7 @@ on:
     branches:
       - main
       - dev
+      - py312
   pull_request:
     branches: [ main ]
 
