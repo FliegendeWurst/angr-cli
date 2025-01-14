@@ -10,8 +10,6 @@ on:
       - dev
   pull_request:
     branches: [ main ]
-  schedule:
-  - cron: "0 6 * * *"
 
 jobs:
   build:
@@ -21,7 +19,7 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v1
       with:
-        python-version: "3.10"
+        python-version: "3.12"
     - name: Install angr
       shell: bash
       run: |
